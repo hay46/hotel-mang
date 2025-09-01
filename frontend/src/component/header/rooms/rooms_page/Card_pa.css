@@ -1,0 +1,55 @@
+.my-image-gap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem;
+  margin: 0.5rem;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  transition: transform 0.3s, box-shadow 0.3s;
+  width: 120px;
+}
+
+.my-image-gap:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 18px rgba(0,0,0,0.12);
+}
+
+.icon {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+.my-image-gap h1 {
+  font-size: 0.95rem;
+  text-align: center;
+  color: #111827;
+  font-weight: 600;
+}
+
+/* Responsive layout */
+@media (max-width: 768px) {
+  .my-image-gap {
+    width: 100px;
+  }
+  .icon {
+    font-size: 1.7rem;
+  }
+  .my-image-gap h1 {
+    font-size: 0.85rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .my-image-gap {
+    width: 90px;
+    padding: 0.8rem;
+  }
+  .icon {
+    font-size: 1.5rem;
+  }
+  .my-image-gap h1 {
+    font-size: 0.8rem;
+  }
+}

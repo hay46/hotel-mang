@@ -1,0 +1,81 @@
+/* Card Wrapper */
+.card-contair {
+  display: flex;
+  justify-content: center;
+  margin: 1rem;
+}
+
+/* Card */
+.gall-section {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  overflow: hidden;
+  max-width: 320px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-align: center;
+}
+
+.gall-section:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 6px 16px rgba(0,0,0,0.15);
+}
+
+/* Image */
+.card-image {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+/* Title + Price */
+.care-icon {
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin: 0.75rem 0;
+  color: #111827;
+}
+
+.care-icon h2 {
+  font-size: 1rem;
+  font-weight: normal;
+  color: #3b82f6;
+  margin-top: 0.25rem;
+}
+
+/* Features */
+.care-price {
+  font-size: 0.9rem;
+  color: #4b5563;
+  margin: 0.5rem 1rem;
+  line-height: 1.5;
+  white-space: pre-line; /* so emojis + line breaks work */
+}
+
+/* Button */
+.care-button {
+  background: #3b82f6;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  padding: 0.6rem 1rem;
+  margin: 0.75rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.care-button:hover {
+  background: #2563eb;
+}
+
+/* Responsive */
+@media (max-width: 480px) {
+  .gall-section {
+    max-width: 100%;
+  }
+
+  .card-image {
+    height: 160px;
+  }
+}

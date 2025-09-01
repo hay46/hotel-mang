@@ -1,0 +1,74 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* ===== Hero Section ===== */
+.Welcome-to-LodgeLink {
+  height: 100vh;
+  background: url(../../../../assets/hotel_app_image/exteror.jpg) center/cover no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  position: relative;
+  color: #fff; /* Base text color */
+}
+
+.Welcome-to-LodgeLink::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.4); /* Dark overlay for contrast */
+  z-index: 0;
+}
+
+.Welcome-to-LodgeLink h1 {
+  position: relative;
+  z-index: 1;
+  font-size: 3rem;
+  font-weight: 900;
+  color: #fff; /* Bright heading */
+  text-shadow: 0 4px 20px rgba(0, 0, 0, 0.6);
+  margin-bottom: 20px;
+}
+
+.Welcome-to-LodgeLink p {
+  position: relative;
+  z-index: 1;
+  font-size: 1.2rem;
+  max-width: 700px;
+  color: #f0f0f0;
+}
+
+/* ===== Responsive ===== */
+@media (max-width: 1024px) {
+  .Welcome-to-LodgeLink h1 {
+    font-size: 2.5rem;
+  }
+  .Welcome-to-LodgeLink p {
+    font-size: 1.1rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .Welcome-to-LodgeLink h1 {
+    font-size: 2rem;
+    padding: 0 15px;
+  }
+  .Welcome-to-LodgeLink p {
+    font-size: 1rem;
+    padding: 0 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  .Welcome-to-LodgeLink h1 {
+    font-size: 1.6rem;
+  }
+  .Welcome-to-LodgeLink p {
+    font-size: 0.95rem;
+  }
+}

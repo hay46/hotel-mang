@@ -6,6 +6,7 @@ import "./App.css";
 import Header from "./component/header/Header";
 import Home from "./component/header/home/Home";
 import Rooms from "./component/header/rooms/Rooms";
+import About from "./component/header/about/About";
 import Footer from "./component/header/footer/Footer";
 
 function App(){
@@ -16,10 +17,10 @@ function App(){
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/rooms" element={<Rooms />} />
+         <Route path="/about" element={<About />} />
         {/* <Route path="/gallery" element={<Gallery />} />
-        <Route path="/gallery" element={<Gallery />} />
         <Route path="/testimonials" element={<Testimonials />} />
-        <Route path="/contact" element={<Contact />} /> */}
+        <Route path="/contact" element={<Contact />} />  */}
       </Routes>
       <Footer />
     </div>
