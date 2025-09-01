@@ -1,0 +1,63 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Hero Section */
+.Discover-Your-perfact {
+  background: url(../../../../assets/hotel_app_image/gallary5.jpg) center/cover no-repeat;
+  height: 70vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: #fff;
+  padding: 0 1rem;
+  position: relative;
+}
+
+/* Dark overlay for readability */
+.Discover-Your-perfact::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+/* Text styling */
+.Discover-Your-perfact h1,
+.Discover-Your-perfact p {
+  position: relative;
+  z-index: 1;
+}
+
+.Discover-Your-perfact h1 {
+  font-size: 2.8rem;
+  margin-bottom: 1rem;
+  font-weight: bold;
+  line-height: 1.2;
+}
+
+.Discover-Your-perfact p {
+  font-size: 1.2rem;
+  max-width: 700px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .Discover-Your-perfact {
+    height: 50vh;
+    padding: 0 1rem;
+  }
+
+  .Discover-Your-perfact h1 {
+    font-size: 2rem;
+  }
+
+  .Discover-Your-perfact p {
+    font-size: 1rem;
+  }
+}

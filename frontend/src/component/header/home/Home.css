@@ -1,0 +1,502 @@
+/* Parent container */
+.abebe {
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* two equal columns by default */
+  gap: 40px;
+  padding: 60px 10%;
+  background: #f9fafc;
+}
+
+/* Each column */
+.web-development,
+.on-timet {
+  display: grid;
+  gap: 30px;
+  grid-template-columns: 1fr; /* default: single column for cards */
+}
+
+/* Card styles */
+.web-development > div,
+.on-timet > div {
+  background: #fff;
+  padding: 25px;
+  border-radius: 16px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-align: left;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Hover effect */
+.web-development > div:hover,
+.on-timet > div:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* Emoji styling */
+.web-development > div h2:first-child,
+.on-timet > div h2:first-child {
+  font-size: 2.2rem;
+  margin-bottom: 10px;
+  animation: popIn 0.6s ease;
+}
+
+/* Title */
+.web-development > div h3,
+.on-timet > div h3 {
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: #030d21;
+  margin-bottom: 10px;
+}
+
+/* Paragraph */
+.web-development > div p,
+.on-timet > div p {
+  font-size: 1rem;
+  color: #555;
+  line-height: 1.5;
+  margin-bottom: 15px;
+}
+
+/* Read more link */
+.web-development > div a,
+.on-timet > div a {
+  font-size: 0.95rem;
+  font-weight: bold;
+  color: #ff9900;
+  text-decoration: none;
+  position: relative;
+  transition: color 0.3s;
+}
+
+.web-development > div a::after,
+.on-timet > div a::after {
+  content: "→";
+  position: absolute;
+  right: -20px;
+  opacity: 0;
+  transition: all 0.3s ease;
+}
+
+.web-development > div a:hover,
+.on-timet > div a:hover {
+  color: #ff6600;
+}
+
+.web-development > div a:hover::after,
+.on-timet > div a:hover::after {
+  right: -10px;
+  opacity: 1;
+}
+
+/* Animations */
+@keyframes popIn {
+  0% { transform: scale(0.8); opacity: 0; }
+  100% { transform: scale(1); opacity: 1; }
+}
+
+/* Responsive for mobile */
+@media (max-width: 768px) {
+  .abebe {
+    grid-template-columns: 1fr; /* stack columns vertically */
+    gap: 50px;
+  }
+
+  .web-development,
+  .on-timet {
+    grid-template-columns: 1fr; /* cards stack vertically */
+  }
+}
+
+/* Desktop layout: two rows of cards */
+@media (min-width: 931px) {
+  .web-development,
+  .on-timet {
+    grid-template-columns: repeat(1, 1fr); /* two columns per row */
+  }
+}
+
+
+
+
+
+.Why-Choose-lod {
+  text-align: center;
+  padding: 50px 20px;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.Why-Choose-lod h1 {
+  font-size: 2.2rem;
+  font-weight: 700;
+  color: #1E3A8A; /* deep blue for elegance */
+  margin-bottom: 15px;
+  letter-spacing: 1px;
+}
+
+.Why-Choose-lod p {
+  font-size: 1.1rem;
+  line-height: 1.7;
+  color: #444;
+  max-width: 650px;
+  margin: 0 auto;
+}
+
+
+
+
+
+.convenience {
+  text-align: center;
+  max-width: 700px;
+  margin: 50px auto;
+  line-height: 1.5;
+  font-family: 'Arial', sans-serif;
+}
+
+.convenience h1 {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 15px;
+  color: #030d21;
+}
+
+.convenience p {
+  font-size: 1rem;
+  color: #555;
+  white-space: pre-line; /* preserves line breaks */
+}
+
+
+
+
+
+
+
+.gallalry-2 {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+  padding: 1rem;
+}
+
+.gallalry-2 img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  object-fit: cover;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+}
+
+.gallalry-2 img:hover {
+  transform: scale(1.03);
+}
+
+.Image {
+  background: #fff;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 1rem;
+  transition: box-shadow 0.3s ease;
+}
+
+.Image:hover {
+  box-shadow: 0 6px 16px rgba(0,0,0,0.15);
+}
+
+.Image h3 {
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+  color: #333;
+}
+
+.Image p {
+  font-size: 0.95rem;
+  color: #666;
+  margin-bottom: 1rem;
+}
+
+.Image button {
+  background-color: #0077b6;
+  color: white;
+  border: none;
+  padding: 0.6rem 1rem;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.Image button:hover {
+  background-color: #023e8a;
+}
+
+/* this is the galletry page css*/
+
+
+
+
+/* ---------- Theme ----------- */
+:root{
+  --bg: #eaf1ff;
+  --card: #0f1630;
+  --text: #eaf1ff;
+  --muted: #93a4c8;
+  --accent: #7dd3fc;      /* sky */
+  --accent2: #a78bfa;     /* purple */
+  --ring: rgba(125,211,252,.35);
+}
+
+/* ---------- Page heading ---------- */
+h1{
+  font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, "Helvetica Neue", Arial;
+  color: var(--text);
+  font-size: clamp(1.4rem, 1.2rem + 1.8vw, 2.4rem);
+  font-weight: 800;
+  line-height: 1.1;
+  letter-spacing: .3px;
+  margin: 8px 0 18px;
+  background: linear-gradient(90deg, var(--accent), var(--accent2));
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  position: relative;
+}
+h1::after{
+  content:"";
+  display:block;
+  width: 76px;
+  height: 3px;
+  border-radius: 999px;
+  background: linear-gradient(90deg, var(--accent), transparent);
+  margin-top: 10px;
+  opacity: .7;
+}
+
+/* ---------- Page background (optional wrapper) ---------- */
+body{
+  background: radial-gradient(1200px 600px at 10% -10%, rgba(167,139,250,.12), transparent),
+              radial-gradient(900px 500px at 110% 10%, rgba(125,211,252,.10), transparent),
+              var(--bg);
+}
+
+/* ---------- Shared gallery grids ---------- */
+.gallery-aba,
+.gallery-abb{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  gap: clamp(12px, 2vw, 22px);
+  margin-block: 16px;
+}
+
+/* Each Gallery_page (whatever it renders) becomes a card */
+.gallery-aba > *,
+.gallery-abb > *{
+  position: relative;
+  border-radius: 18px;
+  overflow: hidden;
+  background: linear-gradient(180deg, rgba(255,255,255,.02), rgba(255,255,255,0)) , var(--card);
+  box-shadow: 0 6px 20px rgba(0,0,0,.25);
+  aspect-ratio: 4 / 3;
+  isolation: isolate;
+  transform: translateZ(0); /* create its own layer for smoother transforms */
+  transition: transform .35s ease, box-shadow .35s ease;
+}
+
+/* Make sure images inside fill nicely */
+.gallery-aba > * img,
+.gallery-abb > * img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform .5s ease, filter .5s ease;
+  filter: saturate(1.02) contrast(1.02);
+}
+
+/* Soft overlay gradient for readability/glow */
+.gallery-aba > *::after,
+.gallery-abb > *::after{
+  content: "";
+  position: absolute;
+  inset: 0;
+  background:
+    radial-gradient(60% 40% at 80% 10%, rgba(125,211,252,.18), transparent 60%),
+    linear-gradient(180deg, transparent 60%, rgba(0,0,0,.28));
+  opacity: .8;
+  transition: opacity .35s ease;
+  pointer-events: none;
+  z-index: 1;
+}
+
+/* Hover & focus styles */
+.gallery-aba > *:hover,
+.gallery-abb > *:hover{
+  transform: translateY(-6px);
+  box-shadow: 0 16px 36px rgba(0,0,0,.35), 0 0 0 6px var(--ring);
+}
+.gallery-aba > *:hover img,
+.gallery-abb > *:hover img{
+  transform: scale(1.06);
+  filter: saturate(1.15) contrast(1.06);
+}
+.gallery-aba > *:hover::after,
+.gallery-abb > *:hover::after{
+  opacity: 1;
+}
+
+/* Keyboard focus (if the card contains a focusable element) */
+.gallery-aba > *:focus-within,
+.gallery-abb > *:focus-within{
+  outline: none;
+  transform: translateY(-4px);
+  box-shadow: 0 0 0 3px rgba(255,255,255,.06), 0 0 0 8px var(--ring);
+}
+
+/* Optional caption/button area if your Gallery_page renders it */
+.gallery-aba .caption,
+.gallery-abb .caption{
+  position: absolute;
+  left: 12px;
+  right: 12px;
+  bottom: 12px;
+  z-index: 2;
+  color: hsl(210, 100%, 98%);
+  text-shadow: 0 1px 10px rgba(0,0,0,.5);
+  display: flex;
+  align-items: end;
+  justify-content: space-between;
+  gap: 8px;
+}
+.gallery-aba .caption .title,
+.gallery-abb .caption .title{
+  font-weight: 700;
+  font-size: clamp(.9rem, .8rem + .4vw, 1.05rem);
+}
+.gallery-aba .caption .btn,
+.gallery-abb .caption .btn{
+  padding: 8px 12px;
+  border-radius: 10px;
+  background: linear-gradient(90deg, var(--accent), var(--accent2));
+  color: #196dce;
+  font-weight: 700;
+  border: none;
+  cursor: pointer;
+  transition: filter .25s ease, transform .25s ease;
+}
+.gallery-aba .caption .btn:hover,
+.gallery-abb .caption .btn:hover{
+  filter: brightness(1.08);
+  transform: translateY(-1px);
+}
+
+/* ---------- Small screens tweaks ---------- */
+@media (max-width: 520px){
+  .gallery-aba,
+  .gallery-abb{
+    grid-template-columns: 1fr 1fr;
+  }
+  .gallery-aba > *,
+  .gallery-abb > *{
+    border-radius: 14px;
+    aspect-ratio: 1 / 1;
+  }
+}
+
+/* ---------- Motion-safe (honor user prefs) ---------- */
+@media (prefers-reduced-motion: reduce){
+  .gallery-aba > *,
+  .gallery-abb > *{
+    transition: none;
+  }
+  .gallery-aba > * img,
+  .gallery-abb > * img{
+    transition: none;
+  }
+}
+
+/* Card-page*/
+
+
+
+
+
+/* Section heading */
+.What-Our-Guests {
+  text-align: center;
+  margin-bottom: 32px;
+}
+
+.What-Our-Guests h1 {
+  font-size: clamp(1.6rem, 1rem + 2vw, 2.4rem);
+  font-weight: 800;
+  color: #1f2937;
+  position: relative;
+}
+
+.What-Our-Guests h1::after {
+  content: "";
+  display: block;
+  width: 70px;
+  height: 3px;
+  margin: 10px auto 0;
+  border-radius: 999px;
+  background: linear-gradient(90deg, #4f46e5, #06b6d4);
+}
+
+/* Cards container */
+.Since-you-wan {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 22px;
+  max-width: 1100px;
+  margin: 0 auto 50px;
+  padding: 0 16px;
+}
+
+/* Card style (Card_page wrapper) */
+.Home-icon-page {
+  text-align: center;
+  padding: 20px;
+  border-radius: 14px;
+  background: #fff;
+  box-shadow: 0 4px 12px rgba(0,0,0,.1);
+  transition: transform .3s ease, box-shadow .3s ease;
+}
+
+.Home-icon-page:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 8px 20px rgba(0,0,0,.15);
+}
+
+/* Stars */
+.Home-icon {
+  font-size: 1.3rem;
+  color: #facc15; /* gold */
+  margin-bottom: 10px;
+}
+
+/* Review text */
+.Home-icon-page p {
+  font-size: 0.95rem;
+  color: #374151;
+  line-height: 1.5;
+  margin: 6px 0 10px;
+}
+
+/* Guest name */
+.Home-icon-page h3 {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #111827;
+}

@@ -1,0 +1,94 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.lodglink {
+  height: 100vh;
+  background: url(../../../../assets/hotel_app_image/gallary3.jpg) center/cover no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  color: #fff;
+  text-align: center;
+  animation: bgZoom 15s ease-in-out infinite alternate;
+}
+
+.lodglink::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(3, 13, 33, 0.6);
+}
+
+.Your-Comfort-Starts {
+  position: relative;
+  z-index: 2;
+  max-width: 800px;
+  padding: 20px;
+  animation: fadeInUp 1.2s ease forwards;
+}
+
+.Your-Comfort-Starts h1 {
+  font-size: 3rem;
+  font-weight: 800;
+  text-shadow: 0 4px 15px rgba(0, 0, 0, 0.6);
+}
+
+.Your-Comfort-Starts p {
+  font-size: 1.2rem;
+  margin: 15px 0;
+}
+
+.Your-Comfort-Starts button {
+  background: #ffcc00;
+  color: #030d21;
+  padding: 12px 30px;
+  border: none;
+  border-radius: 30px;
+  font-size: 1.1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.Your-Comfort-Starts button:hover {
+  background: #ffd633;
+  transform: scale(1.05);
+}
+
+.scroll-down {
+  margin-top: 30px;
+  font-size: 1.1rem;
+  color: #ffcc00;
+  animation: bounce 1.5s infinite, fadeIn 2s ease forwards;
+}
+
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(40px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes bgZoom {
+  from { background-size: 100%; }
+  to { background-size: 115%; }
+}
+
+@keyframes bounce {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(10px); }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@media (max-width: 768px) {
+  .Your-Comfort-Starts h1 { font-size: 2rem; }
+  .Your-Comfort-Starts p { font-size: 1rem; }
+  .Your-Comfort-Starts button { padding: 10px 20px; font-size: 1rem; }
+}
