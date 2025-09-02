@@ -30,7 +30,7 @@ function Footer() {
           {/* Contact Info */}{" "}
           <div className="footer-section">
             {" "}
-            <h3>Contact</h3> <p>📍 Bahir Dar, Ethiopia</p>{" "}
+            <h3>Contact</h3> <p>📍 Dessie, Ethiopia</p>{" "}
             <p>📞 +251 912345678</p> <p>✉️ info@lodgelink.com</p>{" "}
           </div>{" "}
         </div>{" "}
@@ -57,7 +57,7 @@ function Footer() {
         {/* Bottom */}{" "}
         <div className="footer-bottom">
           {" "}
-          © {new Date().getFullYear()} LodgeLink | All Rights Reserved{" "}
+          © {new Date().getFullYear()} Abrihot | All Rights Reserved{" "}
         </div>{" "}
       </footer>
     </div>

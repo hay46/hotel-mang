@@ -8,7 +8,8 @@ import Home from "./component/header/home/Home";
 import Rooms from "./component/header/rooms/Rooms";
 import About from "./component/header/about/About";
 import Footer from "./component/header/footer/Footer";
-
+import Gallary from "./component/Gallary/Gallary";
+import Contact from "./component/header/contact/Contact";
 function App(){
   return (
     <div className="app-container">
@@ -18,10 +19,9 @@ function App(){
         <Route path="/" element={<Home />} />
         <Route path="/rooms" element={<Rooms />} />
          <Route path="/about" element={<About />} />
-        {/* <Route path="/gallery" element={<Gallery />} />
-        <Route path="/testimonials" element={<Testimonials />} />
-        <Route path="/contact" element={<Contact />} />  */}
-      </Routes>
+         <Route path="gallary" element={<Gallary />} />
+         <Route path="contact" element={<Contact/>}/>
+      </Routes>        
       <Footer />
     </div>
   );

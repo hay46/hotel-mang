@@ -146,7 +146,7 @@ ETB 1,500/night"
       <div className="Since-you-wan">
         <Card_page
           id="★★★★★"
-          para="LodgeLink Bahir Dar exceeded all my expectations! The rooms were incredibly clean and comfortable, and the staff were exceptionally friendly and helpful. A truly peaceful stay near Lake Tana."
+          para="LodgeLink Dessie exceeded all my expectations! The rooms were incredibly clean and comfortable, and the staff were exceptionally friendly and helpful. A truly peaceful stay near Lake Tana."
           gust="-Dr.Alemayew B."
         />
         <Card_page

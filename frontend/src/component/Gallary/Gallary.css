@@ -1,0 +1,96 @@
+.gallery-about-us {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 16px;
+  padding: 20px;
+}
+
+.gallery-about-us img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.gallery-about-us img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 16px rgba(0,0,0,0.3);
+}
+
+
+
+.Read-to {
+  text-align: center;
+  padding: 60px 20px;
+  background: linear-gradient(to right, #030d21, #1a2a6c);
+  color: #fff;
+  border-radius: 12px;
+}
+
+.Read-to h1 {
+  font-size: 2rem;
+  margin-bottom: 16px;
+}
+
+.Read-to p {
+  font-size: 1.1rem;
+  margin-bottom: 24px;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  line-height: 1.6;
+}
+
+.Read-to button,
+.Read-to a {
+  margin: 8px;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  text-decoration: none;
+  transition: transform 0.2s ease, background 0.3s ease;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+
+/* Yellow Primary Button */
+.primary-btn {
+  background: #ffcc00;
+  color: #030d21;
+}
+.primary-btn:hover {
+  background: #e6b800;
+  transform: scale(1.05);
+}
+
+/* WhatsApp Button */
+.whatsapp-btn {
+  background: #25d366;
+  color: #fff;
+}
+.whatsapp-btn:hover {
+  background: #1ebe57;
+  transform: scale(1.05);
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .Read-to h1 {
+    font-size: 1.5rem;
+  }
+  .Read-to p {
+    font-size: 1rem;
+  }
+  .Read-to button,
+  .Read-to a {
+    width: 100%;
+    max-width: 250px;
+    justify-content: center;
+  }
+}

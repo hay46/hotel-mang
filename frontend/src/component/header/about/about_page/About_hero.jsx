@@ -6,7 +6,7 @@ function About_hero() {
       <h1>Welcome to LodgeLink Dessie – Your Home Away from Home</h1>
       <p>
         Experience authentic Ethiopian hospitality, comfort, and relaxation in
-        the heart of Bahir Dar.
+        the heart of Dessie.
       </p>
     </div>
   );

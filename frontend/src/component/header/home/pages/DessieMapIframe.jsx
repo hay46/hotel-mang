@@ -31,7 +31,7 @@ function DessieMapIframe() {
 
           <div className="contact-card">
             <h3>📞 Phone</h3>
-            <p>+251 900 000 000</p>
+            <p>+251 946 215 450</p>
           </div>
 
           <div className="contact-card">

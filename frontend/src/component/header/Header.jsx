@@ -15,7 +15,7 @@ function Header() {
         <Link to="/">Home</Link>
         <Link to="/rooms">Rooms</Link>
         <Link to="/about">About</Link>
-        <Link to="/testimonials">Gallary</Link>
+        <Link to="/gallary">Gallary</Link>
         <Link to="/contact">Contact</Link>
         <Link to="/WhatsApp">WhatsApp</Link>
         <Link to="/book-now" className="Book">
