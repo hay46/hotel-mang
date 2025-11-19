@@ -7,7 +7,7 @@
 
 .section {
   width: 100%;
-  background: #030d21;
+  background: #030d32;
   padding: 16px 32px;
   display: flex;
   justify-content: center;
@@ -42,8 +42,8 @@
 
 /* Active Link Highlight */
 .nave a.active {
-  color: #ffcc00;
-  border-bottom: 2px solid #ffcc00;
+  color: #ffcc01;
+  border-bottom: 2px solid #ffcc01;
   font-weight: 600;
 }
 

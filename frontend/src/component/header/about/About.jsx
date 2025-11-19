@@ -152,22 +152,22 @@ ETB 1,500/night"
         <Card_page
           id="★★★★★"
           para="LodgeLink Dessie exceeded all my expectations! The rooms were incredibly clean and comfortable, and the staff were exceptionally friendly and helpful. A truly peaceful stay near Lake Tana."
-          gust="-Dr.Alemayew B."
+          gust="-Dr.minilk desalegn."
         />
         <Card_page
           id="★★★★☆"
           para="Great value for money! The location is perfect for exploring Bahir Dar, and the free Wi-Fi was a lifesaver. I particularly enjoyed the breakfast and the beautiful garden."
-          gust="-pro.Bahiru.l"
+          gust="-pro.Bahiru.legese"
         />
         <Card_page
           id="★★★★☆"
           para="Our family had a wonderful time. The service was impeccable, and they went above and beyond to ensure our kids were comfortable. Highly recommend LodgeLink for a memorable trip."
-          gust="-mr.Alemitu.k"
+          gust="-mr.besfat mebra"
         />
         <Card_page
           id="★★★★☆"
           para="As a frequent traveler to Bahir Dar, LodgeLink has become my go-to. The quiet ambiance, delicious local food, and convenient airport pickup service make it stand out. Ethiopian hospitality at its best!"
-          gust="dr.wasihun.m"
+          gust="dr.fasicaw.m"
         />
       </div>
       <Contact_page />
